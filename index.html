@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Italian Pasta Cloud Kitchen</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #443f3f;
+            color: #ffffff;
+        }
+
+        nav {
+            background-color: #8e44ad;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e9e0e0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: url('https://img.freepik.com/premium-photo/pasta-spaghetti-with-ingredients-cooking-pasta-white-background-top-view_127657-14717.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            background-color: rgba(17, 16, 16, 0.8); /* Semi-transparent white background */
+            padding: 20px 40px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        header h1 {
+            color: #dbd2d2;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #f8f1f1;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        .about,
+        .menu,
+        .contact {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .menu .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu .menu-item img {
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .menu .menu-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .menu .menu-item p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .menu .menu-item span {
+            font-size: 1.2rem;
+            color: #8e44ad;
+            font-weight: bold;
+        }
+
+        .menu-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #8e44ad;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact form button:hover {
+            background-color: #9b59b6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .menu .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu .menu-item img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Write to Us</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="header-content">
+            <h1>Welcome to Our Authentic Italian Pasta Cloud Kitchen</h1>
+            <p>Savor the taste of Italy, freshly made and delivered right to your door.</p>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about container" id="about">
+        <h2>About Us</h2>
+        <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFzdGF8ZW58MHx8MHx8fDA%3D" alt="Italian Pasta">
+        <p>We are a cloud kitchen dedicated to bringing you the most authentic and delicious Italian pasta dishes. With recipes passed down through generations, our chefs use only the freshest ingredients to create meals that transport you to the heart of Italy. Whether you're craving a classic Spaghetti Carbonara or a rich Fettuccine Alfredo, we have something to satisfy every pasta lover.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu container" id="menu">
+        <h2>Our Menu</h2>
+
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="https://www.simplyrecipes.com/thmb/o6XBcjzWW0k8yaZKZxQrSzu6HME=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2017__02__2017-02-28-Alfredo-Sauce-2-6-1906af23775742229ee9f3d42a3ec7ea.jpg" alt="Spaghetti Alfredo">
+            <div>
+                <h3>Spaghetti Alfredo Al Limone</h3>
+                <p>Spaghetti Alfredo al Limone is a zesty twist on the classic Alfredo, combining the richness of butter and cream with the bright, refreshing flavor of fresh lemon juice and zest. This dish offers a perfect balance of creamy and tangy notes, making it a delightful and uplifting pasta experience.</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="https://www.halfbakedharvest.com/wp-content/uploads/2021/04/One-Pot-Creamy-Penne-Alfredo-with-Spicy-Arugula-1.jpg" alt="Fettuccine Alfredo">
+            <div>
+                <h3>Penne Alfredo Classico</h3>
+                <p>Penne Alfredo Classico is a traditional Italian pasta dish featuring penne tossed in a rich and creamy Alfredo sauce made from butter, heavy cream, and Parmesan cheese. The sauce clings perfectly to the ridged penne, delivering a comforting and satisfying meal.</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="https://ministryofcurry.com/wp-content/uploads/2018/07/Pasta-with-Tomato-Cream-Sauce-4-500x375.jpg" alt="Penne Arrabbiata Con Verdure">
+            <div>
+                <h3>Penne Arrabbiata Con Verdure</h3>
+                <p>If you like it spicy, our Penne Arrabbiata is for you. Made with a fiery tomato sauce, garlic, red chili peppers, and other fresh veggies, this dish packs a punch.</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+            <img src="https://www.thepyperskitchen.com/wp-content/uploads/2022/09/0FC66A52-55F2-42FF-8F85-00DC56BA3591-750x750.jpeg" alt="Lasagna">
+            <div>
+                <h3>Spaghetti Arrabbiata Con Funghi</h3>
+                <p>Spaghetti Arrabbiata Con Funghi is a flavorful variation of the classic Arrabbiata, featuring spaghetti in a spicy tomato sauce enriched with sautéed mushrooms. The mushrooms add a savory depth to the fiery, garlicky sauce, creating a satisfying and well-rounded dish.</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 5 -->
+        <div class="menu-item">
+            <img src="https://www.peanutblossom.com/wp-content/uploads/2023/04/pastaprimavera-21.jpg"alt="Lasagna">
+            <div>
+                <h3>Farfalle Primavera</h3>
+                <p>Farfalle Primavera is a vibrant pasta dish that features bow-tie farfalle pasta tossed with a medley of fresh, seasonal vegetables like bell peppers, cherry tomatoes, and zucchini. The dish is typically light and flavorful, often dressed with a light garlic and olive oil sauce or a delicate cream, highlighting the freshness of the vegetables.</p>
+            </div>
+        </div>
+
+         <!-- Menu Item 6 -->
+         <div class="menu-item">
+            <img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2021/09/creamy-tomato-basil-pasta-11.jpg" alt="Lasagna">
+            <div>
+                <h3>Macaroni Alla Rosa</h3>
+                <p>Macaroni Alla Rosa is a delightful pasta dish where macaroni is enveloped in a creamy pink sauce made from a blend of tomato and heavy cream. This rich and slightly tangy sauce offers a velvety texture and a harmonious balance of flavors, making it a comforting and indulgent choice.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container" id="contact">
+        <h2>Write to Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Authentic Italian Pasta Cloud Kitchen. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
